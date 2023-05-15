@@ -1,0 +1,151 @@
+header{
+    height: 70px;
+    background-image: linear-gradient(to top, rgb(61 25 64), rgb(195 86 86));
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px;
+    z-index: 2;
+}
+
+.arg-prog img{
+    width: 60px;
+    height: 48px;
+    border-radius: 10px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 46px;
+}
+
+.arg-prog{
+    display: flex;
+    align-items: center;
+}
+
+.arg-prog-title{
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    padding-top: 16px;
+}
+
+.arg-prog-title p{
+    font-family: 'Nunito';
+    font-weight: 700;
+    line-height: 0.2;
+    cursor: default;
+    color: antiquewhite;
+}
+
+.social-bar a{
+    padding-right: 7px;
+    font-size: 20px;
+    transition-property: color;
+    transition-duration: 0.3s;
+}
+
+.lin-icon{
+    color: white;
+}
+
+.gh-icon{
+    color: white;
+}
+
+.lin-icon:hover{
+    color: #3d83ec;
+}
+
+.gh-icon:hover{
+    color: #0a9280;
+}
+
+.btn-success{
+    background-color: #2aca32 !important;
+    margin-left: 9px;
+}
+
+.btn-success:hover{
+    background-color: #42e64a !important;
+    -webkit-box-shadow: 0px 0px 4px 3px rgba(255, 255, 255, 0.74);
+    -moz-box-shadow: 0px 0px 4px 3px rgba(255, 255, 255, 0.74);
+    box-shadow: 0px 0px 4px 3px rgba(255, 255, 255, 0.74);
+}
+
+.fade-in{
+    opacity: 0;
+    animation: fadeInAnimation 1s ease-in-out forwards;
+}
+  
+@keyframes fadeInAnimation{
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}  
+
+.hero{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.212), rgba(0, 0, 0, 0.212)), url('src\assets\img\hero-fondo.png');
+    padding-top: 280px;
+    padding-bottom: 335px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;   
+}
+
+.hero-container{
+    background-color: rgba(21, 28, 66, 0.938);
+}
+
+.hero-container h1, h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Manrope';
+    font-weight: 700;
+}
+
+.hero-container i{
+    font-size: 50px;
+    color: rgb(255, 186, 83);
+    display: flex;
+    justify-content: center;
+}
+
+/* media queries */
+
+@media (max-width: 320px){
+    .arg-prog img{
+        width: 48px;
+        height: 38px;
+    }
+
+    .arg-prog-title p{
+        line-height: 0.01;
+        font-size: 15px;
+    }
+
+    .social-bar a{
+        padding-right: 9px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 375px){
+    header{
+        padding-left: 20px;
+    }
+
+    .header-right{
+        padding-right: 20px;
+    }
+}

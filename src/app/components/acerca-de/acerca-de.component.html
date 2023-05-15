@@ -1,0 +1,23 @@
+<div class="row acercaDe-start" *ngIf="persona">
+    <div id="pfpinit" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 imgContainer scroll-effect">
+        <img src="{{persona.img}}" class="img-fluid" alt="profilePhoto" id="pfp">
+    </div>
+</div>
+
+<div class="row acercaDe" *ngIf="persona">
+    <h1>Acerca de mí</h1>
+    <div id="photoSub" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <p>{{persona.nombre}} {{persona.apellido}}</p>
+        <p>Full-stack Developer Jr.</p>
+    </div>
+    <div id="aboutme" class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <h1>Acerca de mí</h1>
+        <p>{{persona.descripcion}}</p>
+    </div>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 acercaDe-edit">
+    <button type="button" class="btn btn-info" routerLink="/editacercade/1" *ngIf="isLogged">Editar información</button>
+</div>
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <hr>
+</div>

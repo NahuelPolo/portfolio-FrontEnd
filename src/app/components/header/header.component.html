@@ -1,0 +1,30 @@
+<header>
+    <div class="row nav-bar">
+        <div class="arg-prog container">
+            <img src="assets\img\arg_prog-logo.png" alt="logo-ArgentinaPrograma">
+            <div class="arg-prog-title">
+                <p>Argentina</p>
+                <p>Programa</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-right">
+        <nav class="social-bar">
+            <a class="lin-icon" href="https://www.linkedin.com/in/nahuel-polo-b5b924276/"><i class="bi bi-linkedin"></i></a>
+            <a class="gh-icon" href="https://github.com/NahuelPolo?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+        </nav>
+        <a href="/login"><button type="button" class="btn btn-success"type="submit" *ngIf="!isLogged">Login</button></a>
+        <button type="button" class="btn btn-success" (click)="onLogOut()" *ngIf="isLogged">Logout</button>
+    </div>
+    
+    
+</header>
+
+<section class="hero">
+    <div class="hero-container fade-in">
+        <i class="bi bi-code-slash"></i>
+        <h1>Nahuel Polo</h1>
+        <h2>Soy desarrollador Full-stack Freelancer</h2>
+    </div>
+</section>

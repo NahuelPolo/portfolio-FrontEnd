@@ -1,0 +1,33 @@
+.row{
+    margin: 0;
+    background-color: rgb(38 17 40);
+}
+
+div{
+    padding: 20px 0 15px 0;
+}
+
+p{
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.3;
+    color: antiquewhite;
+}
+
+a{
+    text-decoration: solid;
+}
+
+@media (max-width: 325px){
+    p{
+        font-size: 9px;
+    }
+}
+
+@media (min-width:326px) and (max-width: 462px){
+    p{
+        font-size: 11px;
+    }
+}

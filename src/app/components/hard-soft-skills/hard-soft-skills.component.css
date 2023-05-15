@@ -1,0 +1,50 @@
+#mainContainer{
+    padding: 34px 20px 20px 20px;
+    margin: 0;
+}
+
+div{
+    background-color: rgb(191 191 191);
+}
+
+.row{
+    padding: 0 80px;
+    margin-top: 16px;
+}
+
+.row h1{
+    font-family: 'Nunito';
+    font-weight: 800;
+    font-size: 25px;
+    padding-bottom: 8px;
+}
+
+hr{
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: #000000 -moz-use-text-color #000000;
+    border-style: solid none;
+    border-width: 1px 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* media queries */
+
+@media (max-width: 672px){
+    .row{
+        padding: 0 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 673px) and (max-width: 806px){
+    .row{
+        padding: 0;
+        margin-top: 16px;
+    }
+}
